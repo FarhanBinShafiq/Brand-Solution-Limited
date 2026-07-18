@@ -152,8 +152,14 @@ Version: 1.0
 
 .header .logo {
     position: absolute;
-    top: 0;
-    border-radius: 0 0 30px 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header .logo img {
+    max-height: 50px;
+    width: auto;
+    display: block;
 }
 
 .header .logo a {
@@ -162,6 +168,7 @@ Version: 1.0
     font-size: 22px;
     font-weight: 600;
     position: relative;
+    display: block;
 }
 
 

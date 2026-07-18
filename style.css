@@ -1,3 +1,16 @@
+/* =====================================
+Template Name: Brand Solution Ltd
+Author: CodeGlim
+Author: https://codeglim.coms
+Description: Brand Solution Ltd is a multipurpose business & Consulting HTML5 Template. it's perfect for any business, corporate, consulting & agency websites.
+Version: 1.0
+=======================================*/
+
+
+/*======================================
+	Header CSS
+========================================*/
+
 .header {
     position: relative;
     background: #333;
@@ -3156,37 +3169,37 @@
 
 
 /*====================================
-	Radix Tabs CSS
+	Brand Solution Ltd Tabs CSS
 ======================================*/
 
-.radix-tabs {
+.Brand Solution Ltd-tabs {
     background: #f6f6f6;
 }
 
-.radix-tabs .tab-main {
+.Brand Solution Ltd-tabs .tab-main {
     margin-top: 30px;
 }
 
 
 /* Tab Menu */
 
-.radix-tabs .nav-main {
+.Brand Solution Ltd-tabs .nav-main {
     border-bottom: 3px solid;
     margin-bottom: 20px;
     background: #fff;
     text-align: left;
 }
 
-.radix-tabs .nav-main .nav-tabs {
+.Brand Solution Ltd-tabs .nav-main .nav-tabs {
     display: inline-block;
     text-align: center;
 }
 
-.radix-tabs .nav-main .nav-tabs li {
+.Brand Solution Ltd-tabs .nav-main .nav-tabs li {
     display: inline-block;
 }
 
-.radix-tabs .nav-main .nav-tabs li a {
+.Brand Solution Ltd-tabs .nav-main .nav-tabs li a {
     color: #333;
     background: transparent;
     position: relative;
@@ -3197,7 +3210,7 @@
     border-radius: 0px;
 }
 
-.radix-tabs .nav-main .nav-tabs li a::before {
+.Brand Solution Ltd-tabs .nav-main .nav-tabs li a::before {
     position: absolute;
     left: 50%;
     content: "";
@@ -3214,22 +3227,22 @@
     transition: all 0.3s ease;
 }
 
-.radix-tabs .nav-main .nav-tabs li a.active:before {
+.Brand Solution Ltd-tabs .nav-main .nav-tabs li a.active:before {
     opacity: 1;
     visibility: visible;
     top: 100%;
 }
 
-.radix-tabs .nav-main .nav-tabs li a.active {
+.Brand Solution Ltd-tabs .nav-main .nav-tabs li a.active {
     color: #fff;
 }
 
-.radix-tabs .nav-main .nav-tabs li a i {
+.Brand Solution Ltd-tabs .nav-main .nav-tabs li a i {
     display: block;
     margin-bottom: 5px;
 }
 
-.radix-tabs .text-content h2 {
+.Brand Solution Ltd-tabs .text-content h2 {
     font-size: 20px;
     color: #454545;
     margin-bottom: 10px;
@@ -3237,45 +3250,45 @@
     line-height: 32px;
 }
 
-.radix-tabs .text-content p {
+.Brand Solution Ltd-tabs .text-content p {
     margin-bottom: 15px;
 }
 
-.radix-tabs .text-content p:last-child {
+.Brand Solution Ltd-tabs .text-content p:last-child {
     margin-bottom: 0px;
 }
 
-.radix-tabs .btn {
+.Brand Solution Ltd-tabs .btn {
     margin-right: 10px;
 }
 
-.radix-tabs .btn:hover {
+.Brand Solution Ltd-tabs .btn:hover {
     color: #fff;
 }
 
-.radix-tabs .btn.primary:hover {
+.Brand Solution Ltd-tabs .btn.primary:hover {
     background: #333;
 }
 
-.radix-tabs .btn:last-child {
+.Brand Solution Ltd-tabs .btn:last-child {
     margin-right: 0px;
 }
 
-.radix-tabs .single-gallery {
+.Brand Solution Ltd-tabs .single-gallery {
     margin-top: 30px;
     background: #fff;
     position: relative;
 }
 
-.radix-tabs .gallery-head {
+.Brand Solution Ltd-tabs .gallery-head {
     position: relative;
 }
 
-.radix-tabs .single-gallery img {
+.Brand Solution Ltd-tabs .single-gallery img {
     width: 100%;
 }
 
-.radix-tabs .single-gallery a {
+.Brand Solution Ltd-tabs .single-gallery a {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -3294,24 +3307,24 @@
     transform: scale(0);
 }
 
-.radix-tabs .single-gallery:hover a {
+.Brand Solution Ltd-tabs .single-gallery:hover a {
     transform: scale(1);
     opacity: 1;
     visibility: visible;
 }
 
-.radix-tabs .single-gallery .caption {
+.Brand Solution Ltd-tabs .single-gallery .caption {
     padding: 10px;
 }
 
-.radix-tabs .single-gallery .caption h4 {
+.Brand Solution Ltd-tabs .single-gallery .caption h4 {
     font-size: 16px;
     text-align: center;
 }
 
 
 /*====================================
-	End Radix Tabs CSS
+	End Brand Solution Ltd Tabs CSS
 ======================================*/
 
 

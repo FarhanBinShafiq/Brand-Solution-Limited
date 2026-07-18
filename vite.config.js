@@ -10,7 +10,8 @@ export default defineConfig({
         contact: resolve(__dirname, 'contact.html'),
         portfolio: resolve(__dirname, 'portfolio.html'),
         services: resolve(__dirname, 'services.html'),
-        team: resolve(__dirname, 'team.html')
+        team: resolve(__dirname, 'team.html'),
+        newsletter: resolve(__dirname, 'newsletter.html')
       }
     }
   }

@@ -4327,3 +4327,146 @@ h1, h2, h3, h4, h5, h6 {
 .portfolio .cbp-filter-counter::before {
     display: none !important; /* Remove old triangle */
 }
+
+/*======================================================================
+  Brand Solution Ltd - Services & Work Process Page Premium Upgrades
+========================================================================*/
+
+/* 1. Services Grid Premium Card Layout */
+.services.archives .single-service {
+    background: #ffffff !important;
+    border: 1px solid #f1f5f9 !important;
+    border-radius: 16px !important;
+    padding: 40px 30px !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.02) !important;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    text-align: left !important; /* Left alignment is cleaner for cards with text */
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    height: calc(100% - 30px) !important;
+    margin-bottom: 30px !important;
+}
+
+.services.archives .single-service:hover {
+    transform: translateY(-8px) !important;
+    box-shadow: 0 20px 40px rgba(0, 103, 120, 0.12) !important;
+    border-color: rgba(0, 103, 120, 0.2) !important;
+}
+
+/* Styled circular icon with brand color gradient */
+.services.archives .single-service i {
+    width: 70px !important;
+    height: 70px !important;
+    line-height: 70px !important;
+    text-align: center !important;
+    background: linear-gradient(135deg, rgba(0, 103, 120, 0.1) 0%, rgba(0, 103, 120, 0.02) 100%) !important;
+    color: #006778 !important;
+    border-radius: 50% !important;
+    font-size: 28px !important;
+    margin-bottom: 24px !important;
+    transition: all 0.4s ease !important;
+    display: inline-block !important;
+}
+
+.services.archives .single-service:hover i {
+    background: #006778 !important;
+    color: #ffffff !important;
+    transform: scale(1.05) rotate(5deg) !important;
+    box-shadow: 0 8px 20px rgba(0, 103, 120, 0.25) !important;
+}
+
+.services.archives .single-service h2 {
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    color: #0f172a !important;
+    margin-bottom: 12px !important;
+    text-transform: capitalize !important;
+}
+
+.services.archives .single-service h2 a {
+    color: #0f172a !important;
+    transition: color 0.3s ease !important;
+}
+
+.services.archives .single-service:hover h2 a {
+    color: #006778 !important;
+}
+
+.services.archives .single-service p {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    color: #64748b !important; /* soft slate body text */
+    margin-bottom: 20px !important;
+    flex-grow: 1 !important;
+}
+
+.services.archives .single-service .service-link {
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    color: #e87310 !important; /* orange color */
+    transition: all 0.3s ease !important;
+    display: inline-block !important;
+    margin-top: auto !important;
+}
+
+.services.archives .single-service:hover .service-link {
+    transform: translateX(4px) !important;
+}
+
+/* 2. New Work Process Section Styles */
+.work-process {
+    background: #fdfdfd !important;
+    padding: 80px 0 50px !important;
+}
+
+.work-process .single-process {
+    background: #ffffff !important;
+    border: 1px solid #f1f5f9 !important;
+    border-radius: 16px !important;
+    padding: 35px 25px !important;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.02) !important;
+    position: relative !important;
+    z-index: 1 !important;
+    transition: all 0.4s ease !important;
+    height: calc(100% - 30px) !important;
+    margin-bottom: 30px !important;
+}
+
+.work-process .single-process:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 15px 30px rgba(0, 103, 120, 0.08) !important;
+    border-color: rgba(0, 103, 120, 0.15) !important;
+}
+
+/* Large numbers styling */
+.work-process .single-process .process-number {
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    font-weight: 900 !important;
+    font-size: 54px !important;
+    line-height: 1 !important;
+    color: rgba(0, 103, 120, 0.08) !important; /* faint teal */
+    display: block !important;
+    margin-bottom: 15px !important;
+    transition: color 0.3s ease !important;
+}
+
+.work-process .single-process:hover .process-number {
+    color: rgba(232, 115, 16, 0.2) !important; /* turns orange on hover */
+}
+
+.work-process .single-process h3 {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    color: #0f172a !important;
+    margin-bottom: 12px !important;
+}
+
+.work-process .single-process p {
+    font-size: 13.5px !important;
+    line-height: 1.6 !important;
+    color: #64748b !important;
+    margin: 0 !important;
+}

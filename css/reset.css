@@ -366,7 +366,7 @@ input:-webkit-autofill:focus {
 .breadcrumbs {
     text-align: center;
     padding: 60px 0;
-    background-image: url('../images/bread-bg.jpg');
+    background-image: url('/images/bread-bg.jpg');
     position: relative;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -383,7 +383,7 @@ input:-webkit-autofill:focus {
     height: 100%;
     background-color: #000;
     opacity: 0.5;
-    background-image: url('../images/pattern.png');
+    background-image: url('/images/pattern.png');
 }
 
 .breadcrumbs h2 {

@@ -1,0 +1,21 @@
+// Tailwind and utility styles
+import './style.css';
+
+// Legacy styles
+import '../css/bootstrap.min.css';
+import '../css/font-awesome.min.css';
+import '../css/slicknav.min.css';
+import '../css/cubeportfolio.min.css';
+import '../css/magnific-popup.min.css';
+import '../css/jquery.fancybox.min.css';
+import '../css/niceselect.css';
+import '../css/owl.theme.default.css';
+import '../css/owl.carousel.min.css';
+import '../css/slickslider.min.css';
+import '../css/animate.min.css';
+import '../css/reset.css';
+import '../style.css';
+import '../css/responsive.css';
+import '../css/color/color1.css';
+
+console.log("Brand Solution Limited site loaded with Vite!");

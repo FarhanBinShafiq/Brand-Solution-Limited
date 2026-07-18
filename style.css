@@ -4067,3 +4067,108 @@ Version: 1.0
 /*======================================
 	End Footer CSS
 ========================================*/
+
+/*======================================================================
+  Brand Solution Ltd - Design System Upgrades (Plus Jakarta & Playfair)
+========================================================================*/
+
+/* 1. Typography Overrides */
+body, p, span, a, li, input, textarea, button, select, option {
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    font-weight: 700;
+}
+
+/* Elegant Playfair Display for headings & brand elements */
+.section-title h1, 
+.section-title h2, 
+.slider-text h1, 
+.hero-area h1, 
+.footer h2, 
+.single-widget h2, 
+.header .logo a,
+.breadcrumbs h2,
+.fun-facts h2 {
+    font-family: 'Playfair Display', serif !important;
+}
+
+/* 2. Header and Navigation Styling Updates */
+.header {
+    background: #0d1e21 !important; /* Dark Slate Teal */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.header .middle-bar {
+    background: #0d1e21 !important;
+}
+
+.header .nav li a {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.3px;
+    transition: all 0.3s ease;
+}
+
+.header .nav li.active a, 
+.header .nav li:hover a {
+    color: #e87310 !important; /* Orange accent on hover */
+}
+
+/* 3. Section Title adjustments */
+.section-title {
+    margin-bottom: 50px;
+}
+
+.section-title h1 {
+    font-weight: 800;
+    font-size: 38px;
+    color: #0d1e21 !important;
+}
+
+.section-title .title-bg {
+    color: rgba(0, 103, 120, 0.05) !important; /* Soft Teal background title text */
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    font-weight: 900;
+}
+
+/* 4. Button and Accent hover updates (using Orange/Amber `#e87310` as accent) */
+.btn:hover, 
+.btn.primary:hover,
+.hero-area .button .btn:hover,
+.consulting .form-group.button .btn:hover {
+    background: #e87310 !important;
+    border-color: #e87310 !important;
+    color: #ffffff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(232, 115, 16, 0.3);
+}
+
+.btn {
+    border-radius: 6px !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* 5. Footer Layout updates */
+.footer {
+    background: #071517 !important; /* Very Dark Slate Teal */
+}
+
+.footer .footer-top {
+    background: #071517 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer .bottom-top {
+    border-top: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+.footer .single-widget h2 {
+    color: #ffffff;
+    border-bottom: 2px solid #006778;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}

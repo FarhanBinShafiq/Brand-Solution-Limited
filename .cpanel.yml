@@ -1,5 +1,15 @@
----
 deployment:
   tasks:
     - export DEPLOYPATH=/home/brandsol/public_html
-    - /bin/cp -R * "$DEPLOYPATH"
+    - export PATH=/opt/cpanel/ea-nodejs20/bin:/opt/cpanel/ea-nodejs18/bin:/opt/cpanel/ea-nodejs16/bin:/usr/local/bin:/usr/bin:$PATH
+    - |
+      if command -v npm &> /dev/null; then
+        echo "Node and NPM found. Installing dependencies and building..."
+        npm install --production=false
+        npm run build
+        echo "Deploying dist files to $DEPLOYPATH..."
+        /bin/cp -R dist/* "$DEPLOYPATH"
+      else
+        echo "NPM not found. Falling back to copying source files (Note: Site might look broken without Vite compilation)."
+        /bin/cp -R * "$DEPLOYPATH"
+      fi

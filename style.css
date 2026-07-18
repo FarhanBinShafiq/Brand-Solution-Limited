@@ -3028,34 +3028,100 @@ Version: 1.0
 ========================================*/
 
 .partners {
-    background: #fff;
-    padding: 80px 0 112.5px;
+    background: #fdfdfd;
+    padding: 60px 0 80px;
+    overflow: hidden;
 }
 
 .partners .partners-inner {
-    margin-top: 30px;
+    margin-top: 40px;
+    position: relative;
+    width: 100%;
 }
 
-.partners .single-partner {
-    padding: 20px;
-    border: 1px solid #eee;
-    margin: 0 -1px -1px 0;
-    text-align: center;
+/* Modern Infinite Scroll Marquee */
+.partners-marquee-container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    padding: 10px 0;
+    display: flex;
 }
 
-.partners .single-partner img {
-    opacity: 0.5;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
+/* Gradient masks for smooth fade edges */
+.partners-marquee-container::before,
+.partners-marquee-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 150px;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.partners-marquee-container::before {
+    left: 0;
+    background: linear-gradient(to right, #fdfdfd 0%, rgba(253, 253, 253, 0) 100%);
+}
+
+.partners-marquee-container::after {
+    right: 0;
+    background: linear-gradient(to left, #fdfdfd 0%, rgba(253, 253, 253, 0) 100%);
+}
+
+.partners-marquee-track {
+    display: flex;
+    width: max-content;
+    animation: scroll-marquee 35s linear infinite;
+}
+
+.partners-marquee-track:hover {
+    animation-play-state: paused;
+}
+
+.marquee-item {
+    flex: 0 0 auto;
+    width: 180px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 25px;
+    margin: 0 15px;
+    background: #ffffff;
+    border: 1px solid #f0f0f0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.marquee-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
+    border-color: #82B440;
+}
+
+.marquee-item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    opacity: 0.6;
     transition: all 0.3s ease;
-    width: auto;
-    display: ine-block;
-    display: inline-block;
 }
 
-.partners .single-partner:hover img,
-.partners .single-partner.active img {
+.marquee-item:hover img {
     opacity: 1;
+    transform: scale(1.05);
+}
+
+@keyframes scroll-marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 

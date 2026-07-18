@@ -3082,13 +3082,13 @@ Version: 1.0
 
 .marquee-item {
     flex: 0 0 auto;
-    width: 180px;
+    width: 200px;
     height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 15px 25px;
-    margin: 0 15px;
+    padding: 6px 12px;
+    margin: 0 12px;
     background: #ffffff;
     border: 1px solid #f0f0f0;
     border-radius: 12px;
@@ -3106,13 +3106,13 @@ Version: 1.0
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
-    opacity: 0.6;
+    opacity: 0.8;
     transition: all 0.3s ease;
 }
 
 .marquee-item:hover img {
     opacity: 1;
-    transform: scale(1.05);
+    transform: scale(1.08);
 }
 
 @keyframes scroll-marquee {

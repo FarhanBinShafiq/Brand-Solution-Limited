@@ -11,6 +11,9 @@
     <!-- Title Tag -->
     <title>Newsletter - Brand Solution Ltd</title>
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
     <!--Font awesome Icon Link-->
     <script src="https://kit.fontawesome.com/7a3ca8b40b.js" crossorigin="anonymous"></script>
 
@@ -41,57 +44,227 @@
 
     <style>
         .newsletter-page-container {
-            padding: 80px 0;
-            background: #fdfdfd;
+            padding: 70px 0 90px;
+            background: #f8fafc;
         }
-        .newsletter-wrapper {
+
+        /* Hero Spotlight */
+        .spotlight-card {
             background: #ffffff;
             border-radius: 24px;
-            padding: 40px;
-            box-shadow: 0 15px 50px rgba(0, 103, 120, 0.08);
-            border: 1px solid #f1f5f9;
+            padding: 45px 35px;
+            box-shadow: 0 20px 50px rgba(15, 23, 42, 0.06);
+            border: 1px solid #e2e8f0;
+            margin-bottom: 60px;
+        }
+        .spotlight-header {
             text-align: center;
-            max-width: 900px;
-            margin: 0 auto;
+            max-width: 750px;
+            margin: 0 auto 35px;
         }
-        .newsletter-meta {
-            margin-bottom: 25px;
-        }
-        .newsletter-badge {
-            background: rgba(0, 103, 120, 0.1);
-            color: #006778;
-            padding: 6px 16px;
+        .spotlight-badge {
+            background: linear-gradient(135deg, #006778, #008fa5);
+            color: #ffffff;
+            padding: 6px 18px;
             border-radius: 50px;
-            font-size: 13px;
+            font-size: 12px;
             font-weight: 700;
-            letter-spacing: 0.5px;
+            letter-spacing: 1px;
             text-transform: uppercase;
             display: inline-block;
             margin-bottom: 15px;
+            box-shadow: 0 4px 14px rgba(0, 103, 120, 0.2);
         }
-        .newsletter-wrapper h2 {
+        .spotlight-header h2 {
             font-family: 'Playfair Display', serif;
-            font-size: 36px;
+            font-size: 38px;
             color: #0f172a;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
+            font-weight: 700;
         }
-        .newsletter-date {
+        .spotlight-date {
             font-family: 'Plus Jakarta Sans', sans-serif;
             color: #e87310;
             font-weight: 600;
-            font-size: 14px;
+            font-size: 15px;
         }
-        .newsletter-image-holder {
-            margin-top: 30px;
+        .spotlight-image-holder {
             border-radius: 16px;
             overflow: hidden;
-            border: 1px solid #e2e8f0;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+            border: 1px solid #cbd5e1;
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.05);
+            cursor: pointer;
+            position: relative;
+            transition: transform 0.3s ease;
         }
-        .newsletter-image-holder img {
+        .spotlight-image-holder:hover {
+            transform: scale(1.01);
+        }
+        .spotlight-image-holder img {
             width: 100%;
             height: auto;
             display: block;
+        }
+
+        /* Section Title for Archives */
+        .archive-section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .archive-section-title h3 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 26px;
+            font-weight: 700;
+            color: #0f172a;
+        }
+        .archive-section-title p {
+            color: #64748b;
+            font-size: 15px;
+            margin-top: 5px;
+        }
+
+        /* Grid Layout (3 Column) */
+        .newsletter-archive-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+        @media (max-width: 991px) {
+            .newsletter-archive-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 600px) {
+            .newsletter-archive-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        /* Archive Card */
+        .archive-card {
+            background: #ffffff;
+            border-radius: 18px;
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+            transition: all 0.35s ease;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+        }
+        .archive-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 103, 120, 0.12);
+            border-color: #006778;
+        }
+        .archive-thumb {
+            height: 240px;
+            overflow: hidden;
+            position: relative;
+            background: #f1f5f9;
+        }
+        .archive-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+        .archive-card:hover .archive-thumb img {
+            transform: scale(1.06);
+        }
+        .archive-body {
+            padding: 22px 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .archive-date {
+            font-size: 12px;
+            font-weight: 700;
+            color: #e87310;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+        }
+        .archive-title {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 12px;
+        }
+        .archive-btn {
+            color: #006778;
+            font-weight: 600;
+            font-size: 14px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 10px;
+        }
+        .archive-card:hover .archive-btn {
+            color: #e87310;
+        }
+
+        /* Lightbox Fullscreen Popup Modal */
+        .lightbox-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(10px);
+            z-index: 999999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            padding: 20px;
+        }
+        .lightbox-modal.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        .lightbox-content {
+            position: relative;
+            max-width: 900px;
+            max-height: 90vh;
+            overflow-y: auto;
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 25px 60px rgba(0,0,0,0.3);
+            padding: 10px;
+        }
+        .lightbox-content img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 10px;
+        }
+        .lightbox-close {
+            position: fixed;
+            top: 20px;
+            right: 25px;
+            background: #ffffff;
+            color: #0f172a;
+            border: none;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            transition: all 0.2s ease;
+            z-index: 1000000;
+        }
+        .lightbox-close:hover {
+            background: #e87310;
+            color: #ffffff;
         }
     </style>
 </head>
@@ -176,16 +349,31 @@
     <!-- Main Content Area -->
     <div class="newsletter-page-container">
         <div class="container">
-            <div class="newsletter-wrapper">
-                <div class="newsletter-meta">
-                    <span class="newsletter-badge">Latest Release</span>
-                    <h2>Monthly Event Showcase</h2>
-                    <span class="newsletter-date">July 2026 Edition</span>
+
+            <!-- Hero Spotlight (Latest Month) -->
+            <div id="spotlightContainer" class="spotlight-card">
+                <!-- Dynamically Injected Spotlight -->
+            </div>
+
+            <!-- Archive Section (3-Column Grid) -->
+            <div id="archiveSection" style="display: none;">
+                <div class="archive-section-title">
+                    <h3>Previous Editions</h3>
+                    <p>Browse through our past monthly showcases and event highlights</p>
                 </div>
-                <div class="newsletter-image-holder">
-                    <img src="images/newsletter/newletter.jpeg" onerror="this.onerror=null; this.src='images/newletter.jpeg'; this.onerror=function(){ this.src='newletter.jpeg'; this.onerror=function(){ this.src='images/newsletter/newletter.jpg'; } }" alt="Monthly Newsletter">
+                <div id="archiveGrid" class="newsletter-archive-grid">
+                    <!-- Dynamically Injected Archives -->
                 </div>
             </div>
+
+        </div>
+    </div>
+
+    <!-- Fullscreen Lightbox Modal -->
+    <div id="lightboxModal" class="lightbox-modal">
+        <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+        <div class="lightbox-content">
+            <img id="lightboxImg" src="" alt="Full Newsletter View">
         </div>
     </div>
 
@@ -254,6 +442,63 @@
             </div>
         </div>
     </footer>
+
+    <!-- Newsletter Data Registry -->
+    <script src="js/newsletter-data.js"></script>
+
+    <!-- Page Rendering Controller -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (!window.NEWSLETTER_DATA || window.NEWSLETTER_DATA.length === 0) return;
+
+            const latest = window.getLatestNewsletter();
+            const spotlightContainer = document.getElementById("spotlightContainer");
+
+            // Render Hero Spotlight
+            spotlightContainer.innerHTML = `
+                <div class="spotlight-header">
+                    <span class="spotlight-badge">Latest Release</span>
+                    <h2>${latest.title}</h2>
+                    <span class="spotlight-date">${latest.edition}</span>
+                </div>
+                <div class="spotlight-image-holder" onclick="openLightbox('${latest.image}')">
+                    <img src="${latest.image}" onerror="this.onerror=null; this.src='images/newsletter/newletter.jpg';" alt="${latest.title}">
+                </div>
+            `;
+
+            // Filter Past Month Archives
+            const archives = window.NEWSLETTER_DATA.filter(n => n.id !== latest.id);
+            if (archives.length > 0) {
+                document.getElementById("archiveSection").style.display = "block";
+                const archiveGrid = document.getElementById("archiveGrid");
+                archiveGrid.innerHTML = archives.map(item => `
+                    <div class="archive-card" onclick="openLightbox('${item.image}')">
+                        <div class="archive-thumb">
+                            <img src="${item.image}" onerror="this.onerror=null; this.src='images/newsletter/newletter.jpeg';" alt="${item.title}">
+                        </div>
+                        <div class="archive-body">
+                            <div>
+                                <div class="archive-date">${item.month}</div>
+                                <div class="archive-title">${item.title}</div>
+                            </div>
+                            <div class="archive-btn">View Newsletter <i class="fa fa-arrow-right"></i></div>
+                        </div>
+                    </div>
+                `).join('');
+            }
+        });
+
+        function openLightbox(imgSrc) {
+            document.getElementById("lightboxImg").src = imgSrc;
+            document.getElementById("lightboxModal").classList.add("active");
+            document.body.style.overflow = "hidden";
+        }
+
+        function closeLightbox() {
+            document.getElementById("lightboxModal").classList.remove("active");
+            document.body.style.overflow = "auto";
+        }
+    </script>
 
     <!-- Jquery & scripts -->
     <script src="js/jquery.min.js"></script>

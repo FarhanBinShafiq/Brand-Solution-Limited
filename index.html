@@ -799,8 +799,25 @@
         }
     </style>
 
+    <!-- Newsletter Data Registry -->
+    <script src="js/newsletter-data.js"></script>
+
     <script>
         document.addEventListener("DOMContentLoaded", function() {
+            if (window.NEWSLETTER_DATA && window.NEWSLETTER_DATA.length > 0) {
+                const latest = window.getLatestNewsletter();
+                const modal = document.getElementById("newsletterModal");
+                if (modal && latest) {
+                    modal.querySelector("h2").innerText = latest.title;
+                    modal.querySelector("p").innerText = latest.description;
+                    const img = modal.querySelector(".modal-img-container img");
+                    if (img) {
+                        img.src = latest.image;
+                        img.alt = latest.title;
+                    }
+                }
+            }
+
             // Check if user has visited in this session
             if (!sessionStorage.getItem("newsletter_shown")) {
                 setTimeout(function() {
